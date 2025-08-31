@@ -21,4 +21,8 @@ public class FilterConfig {
 
         return registrationBean;
     }
+    @Bean
+    public AuthUserArgumentResolver authUserArgumentResolver() {
+        return new AuthUserArgumentResolver();
+    }
 }
