@@ -6,7 +6,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         show_sql: true
@@ -17,4 +17,4 @@ server:
     include-binding-errors: always
 jwt:
   secret:
-    key: "YOUR_SECRET_KEY_HERE"
+    key: "NTViNmVkYmQ3MjU0YTQxZDY0ZmI3NTM1OTg0OGViODdiMGI3MzY5NDVmMWYyZGFmNmE4Y2U5Mzg2YTg5ZTY2OA=="
