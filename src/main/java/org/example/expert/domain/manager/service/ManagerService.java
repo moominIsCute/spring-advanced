@@ -81,6 +81,7 @@ public class ManagerService {
         Todo todo = todoRepository.findById(todoId)
                 .orElseThrow(() -> new InvalidRequestException("Todo not found"));
 
+        // todo의 user가 null인지 확인하는 로직을 추가
         if (todo.getUser() == null || !ObjectUtils.nullSafeEquals(user.getId(), todo.getUser().getId())) {
             throw new InvalidRequestException("해당 일정을 만든 유저가 유효하지 않습니다.");
         }
